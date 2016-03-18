@@ -1,0 +1,33 @@
+
+body{
+
+    background-color: #9b9b9b;
+}
+.star{
+    color:red;
+}
+
+.text {
+    /*position: fixed;*/
+    /*left: 20%;*/
+    width: 300px;
+}
+
+textarea {
+    /*position: fixed;*/
+    left: 20%;
+}
+
+.btnEnvoi {
+    position: fixed;
+    left: 150px;
+}
+.btnEffa {
+    position: fixed;
+    left: 250px;
+}
+
+.largeurfixe {
+    width: 220px;
+}
+

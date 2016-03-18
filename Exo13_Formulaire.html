@@ -3,10 +3,76 @@
 <head>
 	<meta charset="utf-8">
 	<title>Formulaires</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="container">
+	<form action="http://serveur/script.php" method="post" id="Form1" onsubmit="" >
+		<h3> Vos coordonnées : </h3>
+		<h3> <span class="star">* Ces zones sont obligatoires pour envoyer le formulaire.</span></h3>
 
-	<script src="Formulaire.js"></script>
+		<h4><div> <label class="largeurfixe">Société :</label>
+			<input required title="Entrez le nom de votre société" class="text" type="text" id="Societe" name="Société"><span class="star">*</span></div><br>
+
+		<div><label class="largeurfixe">Personne à contacter :</label>
+			<input required title="Entrez un nom" class="text" type="text" id="Contact" name="Contact"><span class="star">*</span></div><br>
+
+		<div><label class="largeurfixe">Adresse de l'entreprise :</label>
+			<textarea class="text" id="Adresse" rows="2" name="Adresse"></textarea></div><br>
+
+		<div><label class="largeurfixe">Code Postal :</label>
+			<input required title="Entrez votre CP" class="text" type="text" id="CodPos" name="CodPos"><span class="star">*</span></div><br>
+
+		<div><label class="largeurfixe">Ville :</label>
+			<input required title="Entrez votre ville" class="text" type="text" id="Ville" name="Ville"><span class="star">*</span></div><br>
+
+		<div><label class="largeurfixe">E-mail :</label>
+			<input required title="Entrez votre e-mail" class="text" type="text" id="Mail" name="Mail"><span class="star">*</span></div><br>
+
+		<div><label class="largeurfixe">Téléphone :</label>
+			<input class="text" type="text" id="Phone" name="Phone"></div><br>
+
+		<div><label class="largeurfixe">Sélectionnez<br> l'environnement <br>technique du projet :</label>
+			<textarea class="text" id="Techniq" rows="4" name="Choix"></textarea></div></h4>
+		<div><select id="Choisir">
+			<option value="Choix">Choisissez</option>
+			<option value="Access">Access</option>
+			<option value="Java">Java</option>
+			<option value="Delphi">Delphi</option>
+			<option value="Windev">Windev</option>
+			<option value="Visual Basic">Visual Basic</option>
+			<option value="Power Builder">Power Builder</option>
+			<option value="Internet">Internet</option>
+			<option value="Intranet">Intranet</option>
+			<option value="Windows NT">Windows NT</option>
+			<option value="Unix">Unix</option>
+			<option value="SQL Server">SQL Server</option>
+			<option value="Oracle">Oracle</option>
+			<option value="Autres">Autres</option>
+		</select>
+		</div><br>
+		<div><input class="btnEnvoi btn btn-success" type="submit" name="Envoi" value="Envoyer">
+			<input class="btnEffa btn btn-warning" type="reset" name="Effacer" value="Effacer">
+		</div>
+
+	</form></div>
+
+
 
 </body>
 </html>
+<script src="Formulaire.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
